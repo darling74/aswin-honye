@@ -1,6 +1,17 @@
 // script.js — merged and cleaned
 
 // === CONFIG ===
+
+const navToggle = document.getElementById("navToggle");
+const navMenu = document.getElementById("navMenu");
+
+if (navToggle && navMenu) {
+  navToggle.addEventListener("click", () => {
+    navToggle.classList.toggle("active");
+    navMenu.classList.toggle("open");
+  });
+}
+
 // merchant WhatsApp number in international format (no +)
 const merchantPhone = '918754020475'; // <-- update if needed
 
@@ -237,3 +248,4 @@ renderProducts();
 updateCartUI();
 
 // end of script
+
