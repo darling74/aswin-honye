@@ -218,7 +218,7 @@ h1 .gold{ color:var(--accent) }
   justify-content: space-between;
   gap: 40px;
   padding: 60px 0;
-  margin-left: 20px;
+  margin-left: 3px;
 }
 
 /* Left text block */
@@ -1107,3 +1107,4 @@ input,textarea,select{
   60%{ transform: scale(1.02); opacity:1 }
   100%{ transform: scale(1); opacity:1 }
 }
+
