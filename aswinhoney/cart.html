@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="cart.css">
+  <title>Golden Nectar — Cart</title>
+</head>
+<body>
+  <div class="page">
+    <a class="back" href="index.html">← Back to shop</a>
+    <h1 style="margin:8px 0 18px">Shop — Golden Nectar</h1>
+
+    <div class="cols">
+      <!-- LEFT: products grid -->
+      <section id="products" class="products-grid"></section>
+
+      <!-- RIGHT: cart summary -->
+      <aside class="summary">
+        <div class="card">
+          <h2 style="margin:0 0 8px">Your Cart</h2>
+
+          <div id="cartList" class="cart-list"></div>
+          <div id="emptyMsg" class="muted" style="margin:10px 0">Your cart is empty</div>
+
+          <div id="totalsBlock" style="display:none;margin-top:12px">
+            <div class="totals-row" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+              <div><strong>Total:</strong></div>
+              <div id="cartTotal" style="font-weight:800;color:#c37a00">₹0</div>
+            </div>
+
+            <div class="actions">
+              <button id="sendWhatsapp" class="primary">Send order to WhatsApp</button>
+              <button id="clearCart" class="danger">Clear Cart</button>
+            </div>
+
+            <div style="margin-top:12px;display:flex;flex-direction:column;gap:6px">
+              <label>Your name</label>
+              <input id="customerName" placeholder="Name" />
+
+              <label>Phone (WhatsApp)</label>
+              <input id="customerPhone" placeholder="9876543210" />
+
+              <label>Address</label>
+              <textarea id="customerAddress" rows="2" placeholder="Street, City, Pincode"></textarea>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="section-divider"></div>
+  </div>
+
+  <script src="cart.js"></script>
+</body>
+</html>
